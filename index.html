@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зоотовари</title>
+    
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="./scripts/main.js" type="module"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+        <div class="header__body">
+            <div class="header__logo logo">
+                <a href="/" class="logo__link">
+                    <div class="logo__name">Зоомагазин</div>
+                    <div class="logo__description">товари для тварин</div>
+                </a>    
+            </div>
+            
+            <div class="header__mobile-menu mobile-menu" data-js-menu>
+                <div class="header__mobile-phone mobile-phone" data-js-phone>
+                <a href="tel:+380666400261" class="mobile-phone__link">
+                    <img
+                        class="mobile-phone__icon"
+                        src="./icons/telOrange.png"
+                        alt="phone icon"
+                        width="40" height="40" loading="lazy"
+                    />
+                    +38 066-640-0261
+                </a>
+                </div>
+                <div class="header__social-icons social-icons" data-js-social-icons>
+                <ul class="social-icons__list">
+                    <li class="social-icons__item">
+                        <a href="" class="social-icons__link">
+                            <img
+                                class="social-icons__icon"
+                                src="./icons/viber.png"
+                                alt="Viber icon"
+                                width="40" height="40" loading="lazy"
+                            />
+                        </a>
+                    </li>
+                    <li class="social-icons__item">
+                        <a href="" class="social-icons__link">
+                            <img
+                                class="social-icons__icon"
+                                src="./icons/tiktok.png"
+                                alt="Tik Tok icon"
+                                width="40" height="40" loading="lazy"
+                            />
+                        </a>
+                    </li>
+                </ul>
+                </div> 
+                <nav class="navigation" >
+                    <ul class="navigation__list" data-js-navigation>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Головна</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Пропонуємо</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Наша адреса</a>
+                        </li>
+                    </ul>    
+                </nav>  
+            </div>
+
+            <button class="navigation__burger-button burger" data-js-burger type="button">
+                <span class="burger__line"></span>
+            </button>
+            
+        </div>
+        </header>
+        <main class="main">
+            <section class="hero container">
+                <div class="hero__body">
+                    <div class="hero__title">
+                        <h1 class="hero__title-text">
+                            Ми знаємо, як важливо піклуватися про ваших улюбленців, тому зібрали все найкраще в одному місці!
+                        </h1>
+                    </div>
+                    <div class="hero__image">
+                        <img
+                            class="hero__image-img"
+                            src="./images/dog-hero.png"
+                            alt="dog"
+                            width="605" height="760" loading="lazy"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section class="product-assortment container">
+                <div class="product-assortment__body">
+                    <div class="product-assortment__image">
+                        <img
+                            class="product-assortment__image-dog"
+                            src="./images/dog-assortment.png"
+                            alt="dog with magnifier"
+                            width="605" height="760" loading="lazy"
+                        />
+                        <img
+                            class="product-assortment__image-cat"
+                            src="./images/cat-assortment-mobile.png"
+                            alt="alt"
+                            width="540" height="250" loading="lazy"
+                        />
+                    </div>
+                    <div class="product-assortment__title">
+                        <h2 class="product-assortment__title-text">
+                            Ми пропонуємо широкий асортимент товарів для <span class="product-assortment__title-text_red">котів</span>, <span class="product-assortment__title-text_green">собак</span>, <span class="product-assortment__title-text_yellow">птахів</span>, <span class="product-assortment__title-text_blue">рибок</span> і <span class="product-assortment__title-text_aqua">гризунів</span>.
+                        </h2>
+                    </div>
+                    <div class="product-assortment__description description">
+                        <ul class="description__list">
+                            <li class="description__list-item description__list-item--candy ">
+                                Корма та ласощі – збалансоване харчування для котів, собак, гризунів, птахів і рибок.
+                            </li>
+                            <li class="description__list-item description__list-item--ball">
+                                Іграшки та аксесуари – все для веселого дозвілля та комфорту ваших улюбленців.
+                            </li>
+                            <li class="description__list-item description__list-item--bath">
+                                Гігієна та догляд – засоби для здоров’я та чистоти.
+                            </li>
+                            <li class="description__list-item description__list-item--house">
+                                Будиночки та лежаки – зручні місця для відпочинку.
+                            </li>
+                        </ul>
+                    </div>                                                         
+                </div>
+            </section>
+            <section class="brands container">
+                <div class="brands-title">
+                    <h3 class="brands-title__text">Наші партнери</h3>
+                </div>
+                <div class="brands-over">
+                    <img
+                        class="brands-over__img"
+                        src="./images/brands.png"
+                        alt="amimals"    
+                    />
+                </div>
+                <div class="swiper brands-swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/verselelaga.png"
+                                alt="Versele-laga"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/vitakraft.png"
+                                alt="Vitakraft"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/whiskas.png"
+                                alt="Whiskas"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/beaphar.png"
+                                alt="Beaphar"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/britcare.png"
+                                alt="Brit care"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/amity.png"
+                                alt="Amity"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/britpremium.png"
+                                alt="Brit premium"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/club4paws.png"
+                                alt="Club 4 paws"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/croci.png"
+                                alt="Croci"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/felix.png"
+                                alt="Felix"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/flexi.png"
+                                alt="Flexi"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/friskies.png"
+                                alt="Friskies"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/gimcat.png"
+                                alt="Gim cat"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/groomers.png"
+                                alt="Groomers"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/josera.png"
+                                alt="Josera"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/life.png"
+                                alt="Life dog"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/lori.png"
+                                alt="Lori"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/monge.png"
+                                alt="Monge"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/myaw.png"
+                                alt="Myaw"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/nuevo.png"
+                                alt="Nuevo"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/priroda.png"
+                                alt="Priroda"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/proplan.png"
+                                alt="Purina pro plan"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/royalcanin.png"
+                                alt="Royal canin"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/savory.png"
+                                alt="Savory"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/tomi.png"
+                                alt="Tomi"
+                            />
+                        </li>
+                        <li class="swiper-slide">
+                            <img
+                                class="swiper-slide__img"
+                                src="./icons/brands/trixie.png"
+                                alt="Trixie"
+                            />
+                        </li>    
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+        </main>
+    </div>    
+</body>
+</html>

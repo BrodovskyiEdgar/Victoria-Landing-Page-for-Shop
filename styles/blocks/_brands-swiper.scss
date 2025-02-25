@@ -1,0 +1,77 @@
+@use '../helpers/' as *;
+
+.brands-swiper {
+        position: absolute !important;
+        top: 79.5%;
+        display: flex !important;
+        align-items: center;  
+        flex-direction: column;
+        row-gap: 1.5rem;
+        width: 100%;
+        height: auto;
+        user-select: none;
+        background-color: rgb(138, 138, 138);
+        padding-top: 1.5rem !important;
+
+        @include desktop {
+            top: 80.5%;
+        }
+
+        @include tablet {
+            top: 81.4%;
+        }
+
+        @include mobile {
+            top: 83%;
+            padding-top: 1rem !important;
+            row-gap: .5rem;
+        }
+
+        @include mobile-midle {
+            top: 86.5%;
+            padding-top: .8rem !important;
+        }
+
+        @include mobile-s {
+            top: 89.6%;
+            padding-top: 0 !important; 
+        }
+        .swiper-slide {
+          /*   background-color: transparent; */
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            width: auto !important;
+            height: 100px !important;
+            
+            &__img {
+                display: block;
+                /* height: 82px; */
+                object-fit: cover;
+                
+                @include mobile{
+                    height: 80%;
+                }
+
+                @include mobile-midle {
+                    height: 60%;
+                }
+
+                }
+            }
+        
+            .swiper-pagination {
+                position: static !important;
+                transform: translateX(0) !important;
+                
+                &-bullet {
+                    width: .7rem;
+                    height: .7rem;
+                    
+                    &-active {
+                        background-color: rgb(72, 255, 0);
+                    }
+                }
+            }
+}
+

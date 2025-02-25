@@ -1,0 +1,28 @@
+@use '../helpers/' as *;
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgb(177, 177, 177);
+    padding-block: 0.625em;
+    z-index: 50;
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 100%;
+            background-color: rgb(177, 177, 177);
+            z-index: 5;
+        }    
+    }
+}

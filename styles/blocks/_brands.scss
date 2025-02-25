@@ -1,0 +1,68 @@
+@use '../helpers/' as *;
+
+.brands {
+    position: relative;
+    padding-inline: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+    
+    @include mobile {
+        row-gap: 2rem;
+    }
+    @include mobile-midle {
+        padding-top: 7rem;
+    }
+   
+    &-title {
+
+        &__text {
+            font-size: 3.5rem;
+            font-family: var(--h2h3TitleFontFamily);
+            font-weight: 400;
+            
+            padding-left: 20px;
+
+            @include desktop {
+                font-size: 3rem;
+            }
+            
+            @include tablet {
+                font-size: 2rem;
+            }
+
+            @include mobile-midle {
+                font-size: 1.8rem;
+                padding-left: 0;
+            }
+        }
+    }
+
+    &-over {
+        width: 75rem;
+        filter: drop-shadow(.6rem .6rem .9rem rgb(0, 0, 0));
+        z-index: 10;
+        pointer-events: none;
+
+        @include desktop {
+            width: 62rem;
+        }
+         @include tablet {
+            width: 46.9rem;
+         }
+
+         @include mobile {
+            width: 35rem;
+         }
+
+         @include mobile-midle {
+            width: 30rem;
+         }
+
+         @include mobile-s {
+            width: 20rem;
+         }
+    }
+}

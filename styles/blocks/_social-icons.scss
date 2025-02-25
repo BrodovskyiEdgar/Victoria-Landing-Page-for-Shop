@@ -1,0 +1,47 @@
+@use '../helpers/' as *;
+
+.social-icons {
+    position: relative;
+    z-index: 5;
+
+    @include tablet {
+            display: none;
+    }
+
+    @include mobile {
+        order: 3;
+    }
+
+    &.active {
+        display: flex;
+    }
+    
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        column-gap: 2.5rem;
+
+        @include desktop {
+            column-gap: 2rem;
+        } 
+        
+        @include mobile {
+            column-gap: 3rem;
+        }
+    }
+
+    &__icon {
+        width: 2.5rem;
+        
+        @include desktop {
+            width: 2rem;
+        }
+
+        @include mobile {
+            width: 3rem;
+        }
+    }
+
+    
+}

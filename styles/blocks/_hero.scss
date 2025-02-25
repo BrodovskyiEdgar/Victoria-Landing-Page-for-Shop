@@ -1,0 +1,65 @@
+@use '../helpers/' as *;
+
+.hero {
+    
+    @include desktop {
+        --padding-top: 3.5rem;
+    }
+
+    @include tablet {
+        --padding-top: 3rem;
+    }
+
+    @include mobile {
+        --padding-top: 2rem;
+    }
+    
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: .5rem;
+
+        @include mobile-s {
+            flex-direction: column;
+            row-gap: 1rem;
+        }
+    }
+
+    &__title {
+        max-width: 70rem;
+        
+        &-text {
+            color: var(--colorBlue);
+            font-size: clamp(1.6rem, 4vw, 4rem);
+            line-height: 1.4;
+            font-family: var(--h1TitleFontFamily);  
+
+            @include mobile-s {
+                padding-top: 1rem;
+                line-height: 1.4;
+                text-align: center;
+            }
+        }
+    }
+
+    &__image {
+        
+        &-img {
+            min-width: 30rem;
+            /* filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5)); */
+
+            @include desktop {
+                min-width: 30rem;
+            }
+
+            @include tablet {
+                min-width: 25rem;
+            }
+
+            @include mobile {
+                min-width: 15rem;
+            }    
+        }
+    }
+}

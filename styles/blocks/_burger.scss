@@ -1,0 +1,64 @@
+@use '../helpers/' as *;
+
+.burger {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 35px;
+    background: transparent;
+    border: none;
+    align-items: center;
+    padding: 0;
+    z-index: 5;
+
+    @include tablet {
+      margin-left: auto;
+    }
+
+    @include mobile {
+      display: flex;
+    }
+    .burger__line {
+      width: 100%;
+      height: 2px;
+      background-color: rgb(43, 255, 0);
+      transition: all 0.3s ease;
+    }
+  
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: rgb(43, 255, 0);
+      transition: all 0.3s ease;
+    }
+  
+    &::before {
+      top: 0;
+    }
+  
+    &::after {
+      bottom: 0;
+    }
+  
+    &.active {
+      .burger__line {
+        display: none;
+      }
+  
+      &::before {
+        top: 50%;
+        transform: rotate(-45deg);
+        
+      }
+  
+      &::after {
+        bottom: 50%;
+        translate: 0 2px;
+        transform: rotate(45deg);
+        
+      }
+    }
+  }

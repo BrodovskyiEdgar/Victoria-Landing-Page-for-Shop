@@ -1,0 +1,48 @@
+@use '../helpers/' as *;
+
+.mobile-phone {
+    position: relative;
+    z-index: 5;
+    line-height: 1;
+
+    @include tablet {
+        display: none;
+    }
+
+    @include mobile {
+        order: 2;
+    }
+
+    &.active {
+        display: block;    
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        column-gap: 1rem;
+        font-family: var(--logoTextFontFamily);
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1;
+        
+        @include desktop {
+            font-size: 1rem;
+        }
+
+        @include mobile {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__icon {
+        @include desktop {
+            width: 2rem;
+            height: 100%;
+        }
+
+        @include mobile {
+            width: 3rem;
+        }
+    }   
+}

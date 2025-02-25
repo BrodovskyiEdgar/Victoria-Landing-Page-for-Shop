@@ -1,0 +1,19 @@
+@use 'normalize';
+@use 'fonts';
+@use 'global';
+@use 'variables';
+
+
+@use 'blocks/header';
+@use 'blocks/logo';
+@use 'blocks/mobile-phone';
+@use 'blocks/social-icons';
+@use 'blocks/navigation';
+@use 'blocks/burger';
+@use 'blocks/mobile-menu';
+@use 'blocks/hero';
+@use 'blocks/product-assortment';
+@use 'blocks/brands';
+@use 'blocks/brands-swiper';
+
+
