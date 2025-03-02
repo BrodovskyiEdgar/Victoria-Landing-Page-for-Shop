@@ -788,7 +788,7 @@ $mobile-s: 480px;
 }
 @media (max-width: 37.5rem) {
   .product-assortment__title-text {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 .product-assortment__title-text_red {
