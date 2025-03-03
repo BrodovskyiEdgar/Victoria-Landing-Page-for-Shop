@@ -451,7 +451,7 @@ $mobile-s: 480px;
 .social-icons__list {
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: start;
   column-gap: 2.5rem;
 }
 @media (max-width: 80rem) {
@@ -875,11 +875,12 @@ $mobile-s: 480px;
 
 .brands {
   position: relative;
-  padding-inline: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-inline: 0;
+  padding-bottom: 6.25rem;
   row-gap: 3rem;
 }
 @media (max-width: 47.938rem) {
@@ -896,7 +897,6 @@ $mobile-s: 480px;
   font-size: 3.5rem;
   font-family: var(--h2h3TitleFontFamily);
   font-weight: 400;
-  padding-left: 20px;
 }
 @media (max-width: 80rem) {
   .brands-title__text {
@@ -911,7 +911,6 @@ $mobile-s: 480px;
 @media (max-width: 37.5rem) {
   .brands-title__text {
     font-size: 1.8rem;
-    padding-left: 0;
   }
 }
 .brands-over {
@@ -948,48 +947,48 @@ $mobile-s: 480px;
 
 .brands-swiper {
   position: absolute !important;
-  top: 79.5%;
+  top: 67.3%;
   display: flex !important;
   align-items: center;
   flex-direction: column;
   row-gap: 1.5rem;
   width: 100%;
-  height: auto;
   user-select: none;
   background-color: rgb(138, 138, 138);
   padding-top: 1.5rem !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 @media (max-width: 80rem) {
   .brands-swiper {
-    top: 80.5%;
+    top: 66.5%;
   }
 }
 @media (max-width: 63.938rem) {
   .brands-swiper {
-    top: 81.4%;
+    top: 64.5%;
   }
 }
 @media (max-width: 47.938rem) {
   .brands-swiper {
-    top: 83%;
+    top: 62.6%;
     padding-top: 1rem !important;
     row-gap: 0.5rem;
   }
 }
 @media (max-width: 37.5rem) {
   .brands-swiper {
-    top: 86.5%;
+    top: 66.1%;
     padding-top: 0.8rem !important;
   }
 }
 @media (max-width: 30rem) {
   .brands-swiper {
-    top: 89.6%;
+    top: 66%;
     padding-top: 0 !important;
+    row-gap: 0rem;
   }
 }
 .brands-swiper .swiper-slide {
-  /*   background-color: transparent; */
   display: flex !important;
   justify-content: center;
   align-items: center;
@@ -998,7 +997,6 @@ $mobile-s: 480px;
 }
 .brands-swiper .swiper-slide__img {
   display: block;
-  /* height: 82px; */
   object-fit: cover;
 }
 @media (max-width: 47.938rem) {

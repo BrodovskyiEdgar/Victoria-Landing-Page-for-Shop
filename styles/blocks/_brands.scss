@@ -2,11 +2,12 @@
 
 .brands {
     position: relative;
-    padding-inline: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-inline: 0;
+    padding-bottom: 6.25rem;
     row-gap: 3rem;
     
     @include mobile {
@@ -22,8 +23,6 @@
             font-size: 3.5rem;
             font-family: var(--h2h3TitleFontFamily);
             font-weight: 400;
-            
-            padding-left: 20px;
 
             @include desktop {
                 font-size: 3rem;
@@ -35,7 +34,6 @@
 
             @include mobile-midle {
                 font-size: 1.8rem;
-                padding-left: 0;
             }
         }
     }
@@ -49,20 +47,20 @@
         @include desktop {
             width: 62rem;
         }
-         @include tablet {
+        @include tablet {
             width: 46.9rem;
-         }
+        }
 
-         @include mobile {
+        @include mobile {
             width: 35rem;
-         }
+        }
 
-         @include mobile-midle {
+        @include mobile-midle {
             width: 30rem;
-         }
+        }
 
-         @include mobile-s {
+        @include mobile-s {
             width: 20rem;
-         }
+        }
     }
 }

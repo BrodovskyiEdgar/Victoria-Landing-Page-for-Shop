@@ -2,42 +2,42 @@
 
 .brands-swiper {
         position: absolute !important;
-        top: 79.5%;
+        top: 67.3%;
         display: flex !important;
         align-items: center;  
         flex-direction: column;
         row-gap: 1.5rem;
-        width: 100%;
-        height: auto;
+        width: 100%;      
         user-select: none;
         background-color: rgb(138, 138, 138);
         padding-top: 1.5rem !important;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
         @include desktop {
-            top: 80.5%;
+            top: 66.5%;
         }
 
         @include tablet {
-            top: 81.4%;
+            top: 64.5%;
         }
 
         @include mobile {
-            top: 83%;
+            top: 62.6%;
             padding-top: 1rem !important;
             row-gap: .5rem;
         }
 
         @include mobile-midle {
-            top: 86.5%;
+            top: 66.1%;
             padding-top: .8rem !important;
         }
 
         @include mobile-s {
-            top: 89.6%;
+            top: 66%;
             padding-top: 0 !important; 
+            row-gap: 0rem;
         }
         .swiper-slide {
-          /*   background-color: transparent; */
             display: flex !important;
             justify-content: center;
             align-items: center;
@@ -46,7 +46,6 @@
             
             &__img {
                 display: block;
-                /* height: 82px; */
                 object-fit: cover;
                 
                 @include mobile{
@@ -61,7 +60,7 @@
             }
         
             .swiper-pagination {
-                position: static !important;
+                position: static !important; 
                 transform: translateX(0) !important;
                 
                 &-bullet {

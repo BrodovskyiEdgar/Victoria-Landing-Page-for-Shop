@@ -19,7 +19,7 @@
     &__list {
         display: flex;
         justify-content: center;
-        align-items: end;
+        align-items: start;
         column-gap: 2.5rem;
 
         @include desktop {
