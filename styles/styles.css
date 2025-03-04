@@ -1021,4 +1021,42 @@ $mobile-s: 480px;
   background-color: rgb(72, 255, 0);
 }
 
+.location-info {
+  border: 1px solid red;
+  background-color: rgba(128, 128, 128, 0.281);
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 10% 60% auto;
+  gap: 1.5rem;
+  overflow: hidden;
+}
+.location-info__title {
+  order: 1;
+  grid-area: 1/1/2/3;
+  text-align: center;
+}
+.location-info__title-text {
+  font-size: 2.5rem;
+  font-family: var(--h2h3TitleFontFamily);
+  font-weight: 400;
+}
+.location-info__map {
+  grid-area: 2/1/2/2;
+}
+.location-info__map-iframe {
+  width: 100%;
+  height: 100%;
+}
+.location-info__image {
+  grid-area: 2/2/4/3;
+  justify-self: end;
+}
+.location-info__image-img {
+  max-width: 100%;
+  height: 100%;
+}
+.location-info__contact {
+  grid-area: 3/1/4/2;
+}
+
 /*# sourceMappingURL=styles.css.map */
