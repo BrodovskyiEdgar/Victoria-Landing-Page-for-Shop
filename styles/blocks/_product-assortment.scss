@@ -163,27 +163,27 @@
                     &::before {
                     width: 2em;
                     height: 1.2em; 
-                    background-image: url('../../icons/candy.png');
+                    background-image: url('../icons/candy.png');
                     background-size: 100%;
                 }
                 }
     
                 &--ball {
                     &::before {
-                    background-image: url('../../icons/ball.png');
+                    background-image: url('../icons/ball.png');
                 }
                 
                 }
     
                 &--bath {
                     &::before {
-                    background-image: url('../../icons/bath.png');
+                    background-image: url('../icons/bath.png');
                 }
                 }
     
                 &--house {
                     &::before {
-                    background-image: url('../../icons/house.png');
+                    background-image: url('../icons/house.png');
                 }
                 }
             }

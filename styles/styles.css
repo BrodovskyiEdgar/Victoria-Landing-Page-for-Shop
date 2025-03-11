@@ -860,17 +860,17 @@ $mobile-s: 480px;
 .product-assortment__description .description__list-item--candy::before {
   width: 2em;
   height: 1.2em;
-  background-image: url("../../icons/candy.png");
+  background-image: url("../icons/candy.png");
   background-size: 100%;
 }
 .product-assortment__description .description__list-item--ball::before {
-  background-image: url("../../icons/ball.png");
+  background-image: url("../icons/ball.png");
 }
 .product-assortment__description .description__list-item--bath::before {
-  background-image: url("../../icons/bath.png");
+  background-image: url("../icons/bath.png");
 }
 .product-assortment__description .description__list-item--house::before {
-  background-image: url("../../icons/house.png");
+  background-image: url("../icons/house.png");
 }
 
 .brands {
