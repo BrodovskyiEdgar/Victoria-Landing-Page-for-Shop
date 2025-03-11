@@ -1021,42 +1021,94 @@ $mobile-s: 480px;
   background-color: rgb(72, 255, 0);
 }
 
-.location-info {
-  border: 1px solid red;
-  background-color: rgba(128, 128, 128, 0.281);
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  grid-template-rows: 10% 60% auto;
-  gap: 1.5rem;
-  overflow: hidden;
+.location-info__body {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  margin-top: 2rem;
+  background-color: rgba(165, 165, 165, 0.658);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 1rem;
+}
+@media (max-width: 47.938rem) {
+  .location-info__body {
+    display: block;
+  }
 }
 .location-info__title {
-  order: 1;
-  grid-area: 1/1/2/3;
   text-align: center;
 }
 .location-info__title-text {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: var(--h2h3TitleFontFamily);
   font-weight: 400;
 }
+@media (max-width: 80rem) {
+  .location-info__title-text {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 37.5rem) {
+  .location-info__title-text {
+    font-size: 1.5rem;
+  }
+}
 .location-info__map {
-  grid-area: 2/1/2/2;
+  width: 80%;
+}
+@media (max-width: 80rem) {
+  .location-info__map {
+    width: 70%;
+  }
+}
+@media (max-width: 47.938rem) {
+  .location-info__map {
+    width: 100%;
+    height: 18.75rem;
+  }
 }
 .location-info__map-iframe {
   width: 100%;
   height: 100%;
 }
-.location-info__image {
-  grid-area: 2/2/4/3;
-  justify-self: end;
+@media (max-width: 47.938rem) {
+  .location-info__image {
+    display: none;
+  }
 }
-.location-info__image-img {
-  max-width: 100%;
-  height: 100%;
+@media (max-width: 80rem) {
+  .location-info__image-img {
+    width: 20rem;
+  }
 }
 .location-info__contact {
-  grid-area: 3/1/4/2;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  font-family: var(--mainTextFontFamily);
+  font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+  margin-top: 2rem;
+}
+@media (max-width: 37.5rem) {
+  .location-info__contact {
+    row-gap: 0.5rem;
+  }
+}
+.location-info__contact-local strong {
+  color: var(--colorGreen);
+}
+.location-info__contact-phone strong {
+  color: var(--colorYellow);
+}
+.location-info__contact-schedule strong {
+  color: var(--colorBlue);
+}
+
+.footer {
+  margin-top: 10rem;
+  background: url("../../images/background-footer.png") no-repeat center center/cover;
+  width: 100%;
+  aspect-ratio: 16/9;
 }
 
 /*# sourceMappingURL=styles.css.map */

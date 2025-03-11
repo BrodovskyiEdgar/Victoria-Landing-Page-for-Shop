@@ -1,0 +1,8 @@
+@use '../helpers/' as *;
+
+.footer {
+    margin-top: 10rem;
+    background: url('../../images/background-footer.png') no-repeat center center / cover;
+    width: 100%;
+    aspect-ratio: 16 / 9;;
+}
